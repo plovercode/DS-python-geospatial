@@ -16,11 +16,11 @@ The course does not aim to provide a course in specific spatial analysis and sta
 
 ## Getting started
 
-The course uses Python 3, data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas, Rasterio and Xarray. To install the required libraries, we highly recommend Anaconda or miniconda (<https://www.anaconda.com/download/>) or another Python distribution that includes the scientific libraries (this recommendation applies to all platforms, so for both Window, Linux and Mac).
+The course uses Python 3, data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas and Xarray. To install the required libraries, we recommend Anaconda or miniconda or another Python distribution that includes the scientific libraries (this recommendation applies to all platforms, so for both Window, Linux and Mac).
 
-For detailed instructions to get started on your local machine , see the [setup instructions](./setup.md).
+For detailed instructions to get started on your local machine , see the [setup instructions](./docs/setup.md).
 
-In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jorisvandenbossche/DS-python-geospatial/HEAD?urlpath=lab/tree/notebooks) and open de notebooks rightaway.
+In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plovercode/DS-python-geospatial/HEAD?urlpath=lab/tree/notebooks) and open de notebooks rightaway.
 
 
 ## Contributing
