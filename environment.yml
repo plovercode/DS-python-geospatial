@@ -2,10 +2,10 @@ name: DS-geospatial
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python=3.12
   - ipython
   - jupyter
-  - jupyterlab
+  - jupyterlab>3
   - numpy
   - pandas
   - xarray
@@ -20,6 +20,13 @@ dependencies:
   - geoplot
   - fsspec
   - s3fs
+  - dask
+  - distributed
+  - dask-labextension
+  - bokeh
+  - jupyter_bokeh
+  - intake
+  - intake-xarray
   - ipympl
   - ipyleaflet
   - folium
@@ -29,4 +36,10 @@ dependencies:
   - datashader
   - cmocean 
   - zarr
+  - h5netcdf
+  - h5py
+  - cfgrib
+  - pooch
   - rioxarray
+  - xarray-spatial
+  - pyepsg
