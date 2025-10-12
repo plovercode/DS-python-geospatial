@@ -1,1 +1,1 @@
-from shapely.geometry import Point
+from shapely import Point

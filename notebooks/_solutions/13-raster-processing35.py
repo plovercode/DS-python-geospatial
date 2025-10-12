@@ -1,2 +1,4 @@
-roads_buffer = roads_subset.to_crs("EPSG:31370").buffer(buffers)
-roads_buffer.plot()
+roads_buffer_arr = rasterio.features.rasterize(
+    roads_buffer.geometry, 
+    out_shape=dem_gent.shape, 
+    transform=dem_gent.rio.transform())

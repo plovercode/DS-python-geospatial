@@ -1,2 +1,2 @@
-buffers = roads_subset["frc_omschrijving"].map(buffer_per_roadtype)
-buffers
+roads_buffer = roads_subset.to_crs("EPSG:31370").buffer(buffers)
+roads_buffer.plot()

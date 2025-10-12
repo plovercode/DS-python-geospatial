@@ -1,2 +1,2 @@
-# Divide by the maximum of the int16 range to get [0-1] data
-gent_f = gent_f / 2**16
+# Make a RGB plot
+gent_f.plot.imshow(figsize=(9, 5))

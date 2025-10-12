@@ -1,1 +1,2 @@
-roads_subset.plot(column="frc_omschrijving", figsize=(10, 10), legend=True)
+buffers = roads_subset["frc_omschrijving"].map(buffer_per_roadtype)
+buffers

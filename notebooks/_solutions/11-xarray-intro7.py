@@ -1,2 +1,2 @@
-# Convert all values above 15000
-tc_g.where(tc_g < 15000, 65535)
+tc_data = xr.open_dataarray("./data/gent/raster/2020-09-17_Sentinel_2_L1C_True_color.tiff", 
+                            engine="rasterio", mask_and_scale=False)

@@ -1,2 +1,3 @@
-# Count the number of cells with value 65535
-np.sum(b4_data == 65535).values
+# Convert to float and make 65535 equal to Nan
+b4_data_f = b4_data.astype(float)
+b4_data_f = b4_data_f.where(b4_data != 65535)

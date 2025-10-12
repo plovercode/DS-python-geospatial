@@ -1,1 +1,1 @@
-1 - roads_buffer_arr
+plt.imshow(1 - roads_buffer_arr)

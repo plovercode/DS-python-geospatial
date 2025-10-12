@@ -1,1 +1,1 @@
-green_arr.plot.imshow(figsize=(8, 8))
+green_area = focal.focal_stats(green_arr, kernel, stats_funcs=["sum"])

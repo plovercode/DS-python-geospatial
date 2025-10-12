@@ -1,1 +1,1 @@
-green_area.sel(stats="sum").plot.imshow()
+green_area_arr = signal.convolve(green_arr, kernel, mode='same')

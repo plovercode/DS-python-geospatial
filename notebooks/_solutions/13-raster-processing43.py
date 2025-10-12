@@ -1,1 +1,1 @@
-green.plot()
+green = green.dropna(subset="geometry")

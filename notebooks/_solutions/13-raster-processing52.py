@@ -1,1 +1,1 @@
-green_area10 = green_area.sel(stats="sum").where(green_area.sel(stats="sum") > 10, 0)
+suitable_locations = land_use_residential * (dem_gent > 10) * (1 - roads_buffer_arr) * green_area10

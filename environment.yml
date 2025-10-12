@@ -17,7 +17,6 @@ dependencies:
   - mapclassify
   - cartopy
   - contextily
-  - geoplot
   - fsspec
   - s3fs
   - dask
@@ -30,6 +29,7 @@ dependencies:
   - ipympl
   - ipyleaflet
   - folium
+  - lonboard
   - seaborn
   - hvplot
   - geoviews

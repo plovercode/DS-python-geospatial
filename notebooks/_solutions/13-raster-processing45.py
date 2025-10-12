@@ -1,6 +1,1 @@
-import rasterio.features
-
-green_arr = rasterio.features.rasterize(
-    green.to_crs("EPSG:31370").geometry, 
-    out_shape=dem_gent.shape, 
-    transform=dem_gent.rio.transform())
+green_arr = xr.DataArray(green_arr, coords=dem_gent.coords)

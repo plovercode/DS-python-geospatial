@@ -1,2 +1,2 @@
-b4_data = xr.open_dataarray("./data/gent/raster/2020-09-17_Sentinel_2_L1C_B04.tiff",
-                            engine="rasterio", mask_and_scale=False)
+# Count the number of cells with value 65535
+np.sum(b4_data == 65535).values

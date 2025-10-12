@@ -1,1 +1,1 @@
-xr.DataArray(green_area_arr, coords=dem_gent.coords).plot.imshow(vmin=0)
+green_area10 = green_area.sel(stats="sum").where(green_area.sel(stats="sum") > 10, 0)
