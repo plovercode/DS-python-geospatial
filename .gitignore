@@ -141,3 +141,6 @@ sst.mnmean.v4.nc
 DHMVIIDSMRAS5m_k30/
 */data/raw/
 zwalmbeek/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
