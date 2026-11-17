@@ -56,6 +56,13 @@ td, th {
   font-weight: normal;
 }
 
+.affiliations img {
+  /*height: 100px;*/
+  margin: 2em;
+  margin-right: 0.5em;
+  margin-left:0.5em;
+}
+
 .middlebelowheader {
   /* This fixed size height was found to work well with the slide
      scaling mechanism of remark.js:
@@ -141,4 +148,9 @@ code {
 	border-radius: 4px;
 }
 
-
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
