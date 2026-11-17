@@ -6,14 +6,29 @@ layout: default
 
 To get started, you should have the following three elements setup:
 
-1. Download the course material to your computer
-2. Install Python and the required Python packages using `pixi`
-3. Test your configuration and installation
-4. Start Jupyter lab
+1. Install Pixi
+2. Download the course material to your computer
+3. Install Python and the required Python packages using Pixi
+4. Test your configuration and installation
+5. Start Jupyter lab
 
 In the following sections, more details are provided for each of these steps. When all three are done, you are ready to start coding!
 
-## 1. Getting the course materials
+## 1. Install Pixi
+
+We recommend to use `pixi`, a command line tool for package and environment management (<https://pixi.prefix.dev/latest/>).
+
+Pixi allows us to install a Python distribution with the the scientific libraries we will use in this
+course (this recommendation applies to all platforms, so for both Windows, Linux and Mac).
+
+To install `pixi`, go to the [installer page](https://pixi.prefix.dev/latest/installation/) and
+follow the installation instructions for your operating system.
+
+For Windows users, accept the default installation guidelines:
+
+![Pixi installation](./static/img/pixi_windows_install.png)
+
+## 2. Getting the course materials
 
 ### Option 1: You are already a git user
 
@@ -36,25 +51,9 @@ After the download, unzip on the location you prefer within your user account (e
 
 __Note:__ Make sure you know where you stored the course material, e.g. `C:/Users/yourusername/Documents/DS-python-geospatial`.
 
+## 3. Set up the course Python environment using Pixi
 
-
-## 2. Install Python and the required Python dependencies using `Pixi`
-
-We recommend to use `Pixi`, a command line tool for package and environment management (<https://pixi.prefix.dev/latest/>).
-
-`Pixi` allows us to install a Python distribution with the the scientific libraries we will use in this 
-course (this recommendation applies to all platforms, so for both Windows, Linux and Mac).
-
-### 2.1 Install `Pixi`
-
-Go to the [installer page](https://pixi.prefix.dev/latest/installation/) and 
-follow the installation instructions for your operating system.
-
-For Windows users, accept the default installation guidelines:
-
-![Pixi installation](./static/img/pixi_windows_install.png)
-
-### 2.2 Setup after `Pixi` installation
+Ensure you have `pixi` installed (step 1). Then:
 
 1. Open a terminal window. On Windows use "Command line" or "cmd", open it via Start Menu > 'Command line':
 
@@ -69,7 +68,7 @@ For Windows users, accept the default installation guidelines:
    __!__ `FOLDER_PATH_TO_COURSE_MATERIAL` should be replaced by the path to the
 folder containing the downloaded course materials (e.g. in the example it is `C:/Users/yourusername/Documents/DS-python-geospatial`)
 
-   Type the command and press `ENTER` to execute it. 
+   Type the command and press `ENTER` to execute it.
 
 3. Create the environment and install the course dependencies:
 
@@ -128,7 +127,7 @@ When you see the following message after running `pixi install`:
 Stop the setup (CTRL-C), run the update `pixi self-update` command before doing the setup with `pixi install` again.
 
 
-## 3. Test your configuration
+## 4. Test your configuration
 
 To check if your packages are properly installed, open the terminal again (see above) and navigate to the course directory:
 
@@ -148,7 +147,7 @@ pixi run python check_environment.py
 When all checkmarks are ok, you're ready to go!
 
 
-## 4.(_start of day during course_)  Starting Jupyter Notebook with Jupyter Lab
+## 5.(_start of day during course_)  Starting Jupyter Notebook with Jupyter Lab
 
 Each of the course modules is set up as a [Jupyter notebook](http://jupyter.org/), an interactive  environment to write and run code. It is no problem if you never used jupyter notebooks before as an introduction to notebooks is part of the course.
 
