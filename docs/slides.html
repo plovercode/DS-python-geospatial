@@ -13,7 +13,7 @@ class: center, middle
 # Python for GIS and Geoscience
 
 Doctoral schools of Ghent University<br>
-Ooctober 13, 16 and 19, 2025
+November 23, 30 and December 7, 2026
 
 Joris Van den Bossche, Stijn Van Hoey
 
@@ -24,9 +24,9 @@ class: center, middle
 
 # Who are you?
 
-Go to https://hackmd.io/1bcxgBFIRP28vgyMSZMaBg?both
+Go to https://hackmd.io/qww_pauJQgevaY5V8LdMUQ?both
 
-<iframe src="https://hackmd.io/1bcxgBFIRP28vgyMSZMaBg?both" height="400px" width="800px"></iframe>
+<iframe src="https://hackmd.io/qww_pauJQgevaY5V8LdMUQ?both" height="400px" width="800px"></iframe>
 
 ---
 
@@ -44,7 +44,7 @@ Go to https://hackmd.io/1bcxgBFIRP28vgyMSZMaBg?both
 <a href="https://github.com/stijnvanhoey"><img src="./static/img/icon_github.svg" alt="Github logo"> stijnvanhoey</a>
 
 * Freelance developer and teacher
-* IT Team Lead at [Fluves](https://www.fluves.com/)
+* Head of Product Development at [Fluves](https://www.fluves.com/)
 
 .center[
 ![:scale 90%](./static/img/work_stijn_1.png)]
@@ -63,23 +63,12 @@ For the setup instructions, see the [setup page](https://plovercode.github.io/DS
 ---
 class: left, middle
 
-0. If not already downloaded the course material, installed conda and setup the environment, see [setup instructions section 1 and 2](https://plovercode.github.io/DS-python-geospatial/setup.html)
-1. Next, make sure to complete 3 and 4 of the [setup instructions](https://plovercode.github.io/DS-python-geospatial/setup.html).
-
-> If you succesfully done all steps, put up your `green sticky note` on your laptop screen...
-
-Next:
-
-- Surf to and fill in [the questionnaire](https://hackmd.io/1bcxgBFIRP28vgyMSZMaBg?both)
-- In Jupyter Lab, start with the 'notebooks/00-jupyter_introduction.ipynb'.
-
-> Installation or setup issues? Put up your `red sticky note` on your laptop screen.
+<TODO - SETUP INSTRUCTIONS DAY 1>
 
 ---
 class: center, middle
 
 When you see something like this...
-
 
 ![:scale 100%](./static/img/startup.png)
 
@@ -115,9 +104,9 @@ class: middle, center
 
 ![:scale 80%](./static/img/issuetracker.png)
 
-Report bugs, typo's, suggestions... as issues ([New issue](https://github.com/plovercode/DS-python-geospatial/issues/new))
+Report bugs, typo's, suggestions... as issues ([New issue](https://github.com/plovercode/course-python-geospatial/issues/new))
 
-or see the [contributing guidelines](https://plovercode.github.io/DS-python-geospatial/contributing.html)
+or see the [contributing guidelines](https://github.com/plovercode/course-python-geospatial/blob/main/CONTRIBUTING.md)
 
 ---
 class: middle, section_background
@@ -126,13 +115,12 @@ class: middle, section_background
 
 ---
 
-# Conda
+# Dependency management
 
-### Why using conda?
+### Why using a package manager?
 
 - Consistent package manager across Windows, Mac and Linux
 - Many precompiled packages available
-- Less problems with installation
 
 --
 
@@ -142,45 +130,70 @@ class: middle, section_background
 - You can install different version of Python and other packages alongside on your computer
 - Easily share environments with other
 
+--
+
+### Why conda packages?
+
+- Not limited to Python packages (PyPI), but for any language (e.g. GDAL, R, ...)
+
 ---
-## Small overview of conda commands
 
-Creating a new environment:
+## Python package managers
 
-```
-conda create -n my_env python=3.10 pandas
+![:scale 100%](./static/img/package_managers.png)
 
-# or from environment file
-conda env create -f environment.yml
-```
+---
+## Small cheatsheet of Pixi commands
 
-Activating an environment:
+Creating a new project (= folder with its own environment):
 
 ```
-conda activate my_env
+pixi init my_project
+cd my_project
+pixi add python=3.10 pandas
+```
+
+Using the environment (no activation needed):
+
+```
+pixi run jupyter lab         # run a single command in the environment
 ```
 
 Install a new package:
 
 ```
-conda install matplotlib     # if not working, try: pip install ...
+pixi add matplotlib          # from conda-forge
+pixi add --pypi some-package # if only available on PyPI
 ```
 
-List all installed packages: `conda list`
+Remove a package: `pixi remove matplotlib`
 
-List all your environments: `conda info -e`
+List all installed packages: `pixi list`
 
-See the docs: https://docs.conda.io/projects/conda/en/latest/user-guide/index.html
+See the docs: https://pixi.prefix.dev
 
 ---
-class: center, middle
+## Keep track of your python dependencies with `pixi.toml` and `pixi.lock`
 
-### Keep track of your python ecosystem <br>with an `environment.yml`
-<br><br>
+Pixi updates both files automatically on every `pixi add` / `pixi remove`. Share them (e.g. commit to git) and anyone gets the same environment with:
 
 ```
-conda env export > environment.yml
+pixi install
 ```
+
+<br><br><small>
+Need an `environment.yml` for conda users?
+
+```
+pixi workspace export conda-environment environment.yml
+```
+
+Need a terminal with an activated environment?
+
+```
+pixi shell
+```
+</small>
 
 ---
 
@@ -195,8 +208,8 @@ conda env export > environment.yml
 
 ## Interactive Development Environment (IDE)
 
-* [**Spyder**](https://pythonhosted.org/spyder/) is shipped with Anaconda. The familiar environment for Matlab/Rstudio-users.
-* [**VS Code**](https://code.visualstudio.com/) is also shipped with Anaconda. General purpose editor with powerful plugin ecosystem.
+* [**VS Code**](https://code.visualstudio.com/): general purpose editor with powerful plugin ecosystem.
+* [**Spyder**](https://pythonhosted.org/spyder/): the familiar environment for Matlab/Rstudio-users.
 * [**PyCharm**](https://www.jetbrains.com/pycharm/): Popular for web-development and Django applications, powerful when doing 'real' development (packages, libraries, software)
 * [Eclipse + **pyDev plugin**](http://www.pydev.org/): If you already work in Eclipse, add the python environment
 * ...
@@ -221,7 +234,7 @@ class: center, middle
 
 ![:scale 100%](http://esq.h-cdn.co/assets/15/51/980x490/landscape-1450137389-john-cleese.JPG)
 
-### [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfiVYj-S0Z8BvCgWIbRORYKwCxiJ6Gcl3KuR1_XFPhgat_0Wg/viewform?usp=header)
+### [Feedback form](https://forms.gle/mzbvuHnCQH5Cp6J86)
 
 Please fill in the questionnaire.
 
@@ -293,11 +306,9 @@ Python Spatial Analysis Library (https://pysal.org). Collection of packages for:
 
 Building up on / integrating with GeoPandas:
 
-**MovingPandas** (https://anitagraser.github.io/movingpandas/): working with movement data
+**MovingPandas** (https://movingpandas.org/): working with movement data
 
 **Momepy** (http://docs.momepy.org/en/latest/): quantitative analysis of urban morphology
-
-**geoplot** (https://residentmario.github.io/geoplot/):  high-level Python geospatial plotting library (combining GeoPandas, matplotlib and cartopy)
 
 **...**
 
@@ -319,7 +330,7 @@ Building up on / integrating with xarray:
 
 **...**
 
-Check out the [Xarray ecosystem](https://docs.xarray.dev/en/stable/ecosystem.html).
+Check out the [Xarray ecosystem](https://docs.xarray.dev/en/stable/user-guide/ecosystem.html).
 
 ---
 
@@ -337,26 +348,6 @@ Several more domain/application specific packages:
 
 **...**
 
-
----
-
-# A rich ecosystem of packages
-
-<br>
-
-**Machine learning**: scikit-learn, tensorflow, pytorch, keras, chainer, ...
-
-**Performance**: Numba, Cython, Numexpr, Pythran, C/Fortran wrappers, ...
-
-**Visualisation**: Bokeh, Seaborn, Plotnine, Altair, Plotly, Mayavi, HoloViews, datashader, vaex ...
-
-**Data structures and parallel/distributed computation**: Xarray, Dask, Distributed, Cupy, ...
-
-Specialized packages in many **scientific fields**: astronomy, natural language processing, image processing, geospatial, ...
-
-**Packaging and distribution**: pip/wheels, conda, Anaconda, Canopy, ...
-
-
 ---
 class: center, middle
 
@@ -372,11 +363,9 @@ class: center, middle
 # Thanks
 
 ### Joris Van den Bossche
-
 <a href="https://github.com/jorisvandenbossche"><img src="./static/img/icon_github.svg" alt="Github logo"> jorisvandenbossche</a>
 
 ### Stijn Van Hoey
-
 <a href="https://github.com/stijnvanhoey"><img src="./static/img/icon_github.svg" alt="Github logo"> stijnvanhoey</a>
 
 </textarea>
