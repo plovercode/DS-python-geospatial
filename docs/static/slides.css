@@ -51,9 +51,16 @@ td, th {
 }
 
 .section_background {
-  background-color:#c2c444;
+  background-color:#244E8C;
   color: #fff;
   font-weight: normal;
+}
+
+.affiliations img {
+  /*height: 100px;*/
+  margin: 2em;
+  margin-right: 0.5em;
+  margin-left:0.5em;
 }
 
 .middlebelowheader {
@@ -141,4 +148,9 @@ code {
 	border-radius: 4px;
 }
 
-
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}

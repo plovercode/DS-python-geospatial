@@ -27,7 +27,8 @@ In the last part, the use of xarray for spatial data cubes (netcdf-like), out-of
 
 ## Getting started
 
-The course uses Python 3 and some data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas and Xarray. To install the required libraries, we recommend Miniconda or another Python distribution that
+The course uses Python 3 and some data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas, Rasterio and Xarray. To install the required libraries,
+we recommend Pixi ([Pixi package management tool](https://pixi.prefix.dev/latest/installation/)) or another Python distribution that
 includes the scientific libraries (this recommendation applies to all platforms, so for both Window, Linux and Mac).
 
 For detailed instructions to get started on your local machine, see the [setup instructions](./setup.html).

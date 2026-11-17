@@ -26,7 +26,7 @@ Have an idea for to improve the course? Take a look at the [issue list](https://
 
 ### Report a bug 🐛
 
-Using the course and discovered a bug or a typo? That's annoying! Don't let others have the same experience and report it as an [issue on GitHub](https://github.com/plovercode/DS-python-geospatial/issues) so we can fix it. A good bug report makes it easier for us to do so, so please include:
+Using the course and discovered a bug or a typo? That's annoying! Don't let others have the same experience and report it as an [issue on GitHub](https://github.com/plovercode/issues/new) so we can fix it. A good bug report makes it easier for us to do so, so please include:
 
 * Your operating system name and version (e.g. Mac OS 10.13.6).
 * Any details about your local setup that might be helpful in troubleshooting.

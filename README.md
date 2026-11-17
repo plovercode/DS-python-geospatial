@@ -16,7 +16,7 @@ The course does not aim to provide a course in specific spatial analysis and sta
 
 ## Getting started
 
-The course uses Python 3, data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas and Xarray. To install the required libraries, we recommend Anaconda or miniconda or another Python distribution that includes the scientific libraries (this recommendation applies to all platforms, so for both Window, Linux and Mac).
+The course uses Python 3, data analysis packages such as Pandas, Numpy and Matplotlib and geospatial packages such as GeoPandas and Xarray. To install the required libraries, we recommend using conda packages managed with [Pixi](https://pixi.prefix.dev), or another Python distribution that includes the scientific libraries (this recommendation applies to all platforms, so for both Window, Linux and Mac).
 
 For detailed instructions to get started on your local machine , see the [setup instructions](./docs/setup.md).
 
