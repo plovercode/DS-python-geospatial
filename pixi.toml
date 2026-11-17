@@ -1,0 +1,59 @@
+[workspace]
+channels = ["conda-forge"]
+name = "DS-python-geospatial"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+python = "3.14.*"
+ipython = "*"
+jupyter = "*"
+jupyterlab = ">3"
+numpy = "*"
+pandas = "*"
+xarray = "*"
+geopandas = "*"
+rasterio = "*"
+rioxarray = "*"
+owslib = "*"
+rasterstats = "*"
+exactextract = "*"
+pyarrow = "*"
+matplotlib = "*"
+mapclassify = "*"
+cartopy = "*"
+contextily = "*"
+fsspec = "*"
+s3fs = "*"
+dask = "*"
+distributed = "*"
+dask-labextension = "*"
+bokeh = "*"
+jupyter_bokeh = "*"
+intake = "*"
+intake-xarray = "*"
+ipympl = "*"
+ipyleaflet = "*"
+folium = "*"
+lonboard = "*"
+seaborn = "*"
+hvplot = "*"
+geoviews = "*"
+datashader = "*"
+cmocean = "*"
+zarr = "*"
+h5netcdf = "*"
+h5py = "*"
+cfgrib = "*"
+pooch = "*"
+xarray-spatial = "*"
+pyepsg = "*"
+
+[feature.dev.dependencies]
+jupytext = ">=1.19.6,<2"
+
+[environments]
+# Includes `default` feature with [dependencies] implicitly
+default = { solve-group = "main" }
+
+# Includes `default` + `dev` features in the same solve group
+dev = { features = ["dev"], solve-group = "main" }
