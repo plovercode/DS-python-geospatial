@@ -1,1 +1,1 @@
-stations.plot(figsize=(12, 6), column='available_bikes', legend=True)
+districts = geopandas.read_file("data/paris_districts_utm.geojson")

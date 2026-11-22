@@ -1,2 +1,1 @@
-streets = geopandas.read_file("data/osm_network_gent.gpkg")
-streets.head()
+streets = streets.to_crs("EPSG:31370")

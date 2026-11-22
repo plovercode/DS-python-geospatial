@@ -5,4 +5,4 @@ ghent_pressure.plot.line(ax=ax)
 ghent_pressure.resample(time="YE").mean().plot.line(ax=ax)
 
 ax.set_ylabel('Pressure (Pa)')
-ax.set_title('Pressure (Pa) in Ghent (-51.05, 3.71)')
+ax.set_title('Pressure (Pa) in Ghent (51.05, 3.71)')

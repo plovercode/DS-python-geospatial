@@ -1,2 +1,2 @@
-# Make a plot of the districts colored by the population density
-districts.plot(column='population_density', figsize=(12, 6), legend=True)
+# As comparison, the misleading plot when not turning the population number into a density
+districts.plot(column='population', figsize=(12, 6), legend=True)

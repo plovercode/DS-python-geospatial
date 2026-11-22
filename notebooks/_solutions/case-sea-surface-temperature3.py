@@ -1,2 +1,2 @@
-# dims attribute of dataset object
-ds.dims
+# sizes attribute of dataset object
+ds.sizes

@@ -1,1 +1,1 @@
-districts.head()
+districts.shape

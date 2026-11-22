@@ -1,1 +1,1 @@
-stations['bike_stands'].plot.hist()
+stations.plot(figsize=(12, 6), column='available_bikes', legend=True)

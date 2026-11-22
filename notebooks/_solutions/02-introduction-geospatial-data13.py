@@ -1,1 +1,1 @@
-districts.plot(figsize=(12, 6))
+districts.geometry.area

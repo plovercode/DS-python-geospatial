@@ -1,1 +1,1 @@
-gdf_gent["road_type"] = gdf_gent.geometry.apply(lambda point: closest_road_type(point, streets_unioned))
+gdf_gent2 = geopandas.sjoin_nearest(gdf_gent, streets[["geometry", "highway"]])

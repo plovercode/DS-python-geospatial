@@ -1,1 +1,1 @@
-closest_road_type(point, streets)
+%timeit streets.distance(point).idxmin()

@@ -1,1 +1,1 @@
-gdf_gent["road_type"].value_counts()
+gdf_gent2["road_type"] = gdf_gent2["highway"].replace(mapping)
