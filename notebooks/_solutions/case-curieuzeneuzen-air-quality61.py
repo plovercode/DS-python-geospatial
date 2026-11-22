@@ -1,1 +1,1 @@
-streets["highway"][idx_closest]
+streets.loc[idx_closest, "highway"]

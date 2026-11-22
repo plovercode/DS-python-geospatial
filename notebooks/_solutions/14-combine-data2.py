@@ -1,2 +1,2 @@
-ds = xr.open_mfdataset(files, parallel=True)
+ds = xr.open_mfdataset(files)
 ds

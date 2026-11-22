@@ -1,1 +1,1 @@
-districts.shape
+districts.plot(figsize=(12, 6))

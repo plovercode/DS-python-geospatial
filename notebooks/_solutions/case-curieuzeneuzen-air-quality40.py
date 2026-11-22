@@ -1,1 +1,1 @@
-counts = gdf['land_use_class'].value_counts()
+frequent_categories = counts.index[counts > 50]

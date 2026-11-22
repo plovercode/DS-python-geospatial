@@ -1,1 +1,1 @@
-gdf_gent["road_type"] = gdf_gent["road_type"].replace(mapping)
+subset = gdf_gent2[gdf_gent2["road_type"].isin(categories)]

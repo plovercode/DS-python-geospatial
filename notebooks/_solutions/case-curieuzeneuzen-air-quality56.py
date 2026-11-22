@@ -1,1 +1,1 @@
-streets.plot(column="highway", figsize=(20, 20), legend=True, cmap="tab20")
+streets.distance(point)

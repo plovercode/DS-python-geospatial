@@ -1,1 +1,1 @@
-streets_unioned = streets.dissolve("highway").reset_index()
+%timeit streets.sindex.nearest(point)

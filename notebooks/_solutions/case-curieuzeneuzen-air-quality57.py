@@ -1,1 +1,1 @@
-streets.distance(point)
+streets.distance(point).min()

@@ -1,1 +1,1 @@
-streets.loc[idx_closest, "highway"]
+streets.sindex
